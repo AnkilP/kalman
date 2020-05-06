@@ -1,6 +1,6 @@
 *~
 .DS_Store
-
+external/*
 # IDEs
 .idea
 CMakeLists.txt.user
