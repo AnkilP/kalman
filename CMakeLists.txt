@@ -26,7 +26,6 @@ set(HEADERS
 
     # UKF
     include/kalman/UnscentedKalmanFilterBase.hpp
-    include/kalman/UnscentedKalmanFilter.hpp
     include/kalman/SquareRootUnscentedKalmanFilter.hpp
 
     # Models
@@ -48,15 +47,14 @@ set(CMAKE_CXX_FLAGS "${KALMAN_CXX_FLAGS} -Wall -pedantic -g")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DEIGEN_NO_DEBUG")
 
 # Examples
-if(KALMAN_BUILD_EXAMPLES)
-  add_executable(example_robot1 "examples/Robot1/main.cpp")
-endif()
+#if(KALMAN_BUILD_EXAMPLES)
+#  add_executable(example_robot1 "examples/Robot1/main.cpp")
+#endif()
 
 # Unit Tests
 set(TESTS
     # UKF
     test/UnscentedKalmanFilterBase.cpp
-    test/UnscentedKalmanFilter.cpp
     test/SquareRootUnscentedKalmanFilter.cpp
     
     # Utils
